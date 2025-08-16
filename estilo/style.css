@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #2676D1;
+    --cor2: #E8E7DF;
+    --cor3: #FFFDF5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--cor2);
+}
+
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    display: block;
+    position: fixed;
+    align-items: center;
+    justify-content: end;
+    background-color: var(--cor1);
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+section#ficha {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: var(--cor3);
+}
+
+#foto-perfil img {
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    display: grid;
+    margin: 20px;
+    border-radius: 50%;
+    justify-self: center;
+    border: 5px solid var(--cor1);
+}
+
+#texto-ficha h1{
+    color: var(--cor1);
+}
+
+#redes-sociais {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#redes-sociais a {
+    width: 80vw;
+    padding: 5px;
+    text-align: center;
+}
+
+#redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
+
+#apresentacao {
+    width: 90%;
+    margin: 20px auto;
+    background-color: var(--cor3);
+}
+
+#texto-apresentacao {
+    display: flex;
+    color: var(--cor1);
+    padding-left: 10px;
+    align-items: center;
+}
+
+#texto-apresentacao h1{
+    padding: 10px;
+}
+
+#texto-apresentacao img {
+    width: 35px;
+    height: 35px;
+}
+
+.video{
+    margin: auto -10px;
+    position: relative;
+    padding-bottom: 55%;
+}
+
+.video iframe{
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    border-radius: 20px;
+}
+
+#habilidades{
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: var(--cor3);
+}
+
+#texto-skills{
+    display: flex;
+    color: var(--cor1);
+    padding-left: 10px;
+    align-items: center;
+}
+
+#texto-skills h1{
+    padding: 10px;
+}
+
+#texto-skills img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Estilo geral para todos os navegadores */
+progress {
+  /* Altera a altura da barra */
+  height: 20px;
+  /* Remove a aparência nativa do navegador */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Cor de fundo para a barra "vazia" (fallback) */
+  background-color: #e0e0e0;
+  /* Adiciona bordas arredondadas */
+  border-radius: 20px;
+}
+
+/* Estilizando o progresso preenchido em navegadores baseados em WebKit (Chrome, Safari, Opera) */
+progress::-webkit-progress-value {
+  background-color: #007bff; /* Cor azul para a barra de progresso */
+  border-radius: 20px;
+  /* Adiciona uma transição suave para a animação */
+  transition: width 0.4s ease-in-out;
+}
+
+/* Estilizando a barra "vazia" em navegadores baseados em WebKit */
+progress::-webkit-progress-bar {
+  background-color: #e0e0e0; /* Cor cinza claro para a barra de fundo */
+  border-radius: 20px;
+}
+
+.progress-bar{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.progress-bar img {
+    width: 25px;
+    height: 25px;
+}
+
+.legenda{
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    color: var(--cor1);
+    justify-content: space-between;
+}
+
+.icone {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.icone h1{
+    padding: 0 10px;
+}
+
+.barra-upload{
+    height: 10px;
+    width: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+#formacao{
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: var(--cor3);
+}
