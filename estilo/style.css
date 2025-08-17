@@ -22,24 +22,41 @@ header{
     left: 0;
     right: 0;
     height: 45px;
-    display: block;
+    display: flex;
+    z-index: 1000;
     position: fixed;
     align-items: center;
     justify-content: end;
     background-color: var(--cor1);
 }
 
-nav {
-    height: 60px;
+.menu ul {
     display: flex;
-    align-items: center;
-    justify-content: end;
+    list-style: none;
 }
 
-section#ficha {
+.menu i{
+    color: white;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.menu i:hover{
+    transition: .5s;
+    color: var(--cor1);
+    background-color: #61a2ebe6 ;
+}
+
+.menu a{
+    margin: 10px;
+    text-decoration: none;
+}
+
+section{
+    top: 50%;
     width: 90%;
-    padding: 20px;
-    margin: 20px auto;
+    padding: 15px;
+    margin: 50px auto;
     background-color: var(--cor3);
 }
 
@@ -76,12 +93,6 @@ section#ficha {
     height: 30px;
 }
 
-#apresentacao {
-    width: 90%;
-    margin: 20px auto;
-    background-color: var(--cor3);
-}
-
 #texto-apresentacao {
     display: flex;
     color: var(--cor1);
@@ -111,13 +122,6 @@ section#ficha {
     height: 90%;
     position: absolute;
     border-radius: 20px;
-}
-
-#habilidades{
-    width: 90%;
-    padding: 15px;
-    margin: 20px auto;
-    background-color: var(--cor3);
 }
 
 #texto-skills{
@@ -160,7 +164,7 @@ progress::-webkit-progress-value {
 
 /* Estilizando a barra "vazia" em navegadores baseados em WebKit */
 progress::-webkit-progress-bar {
-  background-color: #e0e0e0; /* Cor cinza claro para a barra de fundo */
+  background-color: #e0e0e0; /* Cor de fundo da barra vazia */
   border-radius: 20px;
 }
 
@@ -286,7 +290,7 @@ progress::-webkit-progress-bar {
 
 .projeto-item img {
     width: 100%;
-    height: 250px;
+    height: 80%;
     border-radius: 10px;
 }
 
