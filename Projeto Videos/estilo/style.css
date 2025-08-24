@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.918);
+}
+
+header{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 5px 5px black;
+}
+
+main{
+    margin: auto;
+    width: 450px;
+}
+
+a{
+    text-decoration: none;
+}
+
+main img{
+    margin: 5px;
+}
+
+.Video{
+    padding-bottom: 58%;
+    position: relative;
+    background-color: var(--cor05);
+    margin: 25px -10px 25px -10px;
+}
+
+.Video iframe{
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+
+#voltar{
+    margin: auto;
+    text-align: center;
+}

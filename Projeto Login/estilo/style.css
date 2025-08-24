@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+:root{
+    --cor01:#5F2C82;
+    --cor02:#536C91;
+    --cor03:#4C959B;
+    --cor04:#94CFCD;
+    --cor05:#2D6462;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Mobile*/
+
+@media screen and (max-width:500px) {
+
+    body{
+       background-color: var(--cor01);
+    }
+
+    #container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-content: center;
+    }
+
+    form{
+        width: 90vw;
+        height: 80vh;
+        max-width: 280px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: white;
+    }
+
+    form #imagem{
+        width: 100%;
+        height: 45%; 
+        background-size: cover;
+        background-position: center right;
+        border-radius: 20px 20px 0px 0px;
+        background-image: url("../Imagem/arranha-ceu.jpg");
+    }
+
+    form input{
+        border: none;
+        display: flex;
+        justify-self: center;
+        border-bottom: 2px solid black;
+    }
+
+    .campo{
+        padding: 10px;
+    }
+
+    .campo input{
+        padding: 2px;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    span{
+        padding: 7px;
+    }
+
+    input[type="submit"]{
+        border: none;
+        margin: 10px;
+        padding: 10px;
+        font-size: 1.1em;
+        border-radius: 5px;
+        background-color: var(--cor02);
+    }
+
+    input[type="submit"]:hover{
+        color: white;
+        transition: .8s;
+        background-color: var(--cor01);
+    }
+}
+
+/*Telas Pequenas*/
+
+@media screen and (min-width:501px) and (max-width:649px){
+    body{
+        background-image: linear-gradient(45deg,#5F2C82, #536C91,#94CFCD);
+    }
+
+    #container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-content: center;
+    }
+
+    form{
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border-radius: 20px;
+        background-color: white;
+    }
+
+    form #imagem{
+        width: 50%;
+        height: 100%; 
+        border-radius: 20px 0px 0px 20px;
+        background-image: url("../Imagem/predio.jpg");
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    form input{
+        border: none;
+        border-bottom: 2px solid black;
+    }
+
+    .campo{
+        display: grid;
+        padding: 10px;
+        width: 50%;
+        position: relative;
+    }
+
+    .campo input{
+        padding: 2px;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    span{
+        padding: 7px;
+    }
+
+    input[type="submit"]{
+        border: none;
+        margin: 10px;
+        padding: 10px;
+        font-size: 1.1em;
+        border-radius: 5px;
+        background-color: var(--cor02);
+    }
+
+    input[type="submit"]:hover{
+        color: white;
+        transition: .8s;
+        background-color: var(--cor01);
+    }
+}
+
+/*Telas Grandes*/
+
+@media screen and (min-width:650px) {
+    body{
+        background-image: linear-gradient(to top,#5F2C82, #536C91,#94CFCD);
+    }
+
+    #container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-content: center;
+    }
+
+    form{
+        width: 90vw;
+        height: 300px;
+        max-width: 630px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        border-radius: 20px;
+        background-color: white;
+    }
+
+    form #imagem{
+        left: 55%;
+        width: 40%;
+        height: 100%; 
+        margin: auto;
+        position: relative;
+        border-radius: 0px 20px 20px 0px;
+        background-image: url("../Imagem/predio.jpg");
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    form input{
+        border: none;
+        border-bottom: 2px solid black;
+    }
+
+    .campo{
+        width: 50%;
+        left: -280px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .campo input{
+        padding: 2px;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    span{
+        padding: 7px;
+    }
+
+    input[type="submit"]{
+        border: none;
+        margin: 10px;
+        padding: 10px;
+        font-size: 1.1em;
+        border-radius: 5px;
+        background-color: var(--cor02);
+    }
+
+    input[type="submit"]:hover{
+        color: white;
+        transition: .8s;
+        background-color: var(--cor01);
+    }
+}
