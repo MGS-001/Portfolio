@@ -1,0 +1,19 @@
+
+main{
+    display: grid;
+    grid-template-columns: 20px 300px 3fr 20px;
+    grid-row: 20px 5fr;
+}
+
+#ficha{
+    top: 35px;
+    margin: 15px;
+    height: 550px;
+    position: fixed;
+    max-width:300px;
+}
+
+#detalhe{
+    margin: -20px;
+    grid-column: 3;
+}
